@@ -3,61 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact me</title>
+    <title>Contact Me</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Contact me</h1>
+
+<header>
+    <nav>
+        <h2>Collins Portfolio</h2>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><strong><a href="contact.html">Contact</a></strong></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section>
+    <h1>Contact Me</h1>
+
     <form>
         <fieldset>
-            <legend>Contact information</legend>
-            <label for="full name">Full name</label><br>
-            <input type="text"
-            id="full name"
-            placeholder="Enter your full name"
-            required>
-            <br><br>
-            <label for="phone">phone:</label><br>
-            <input type="tel"
-            id="phone"
-            name="phone"
-            placeholder="+254 700 000 000">
+
+            <legend>Contact Information</legend>
+
+            <label for="fullname">Full Name</label><br>
+            <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Enter your full name"
+                required>
+
             <br><br>
 
-            <label for="subjects">Subject:</label><br>
+            <label for="phone">Phone</label><br>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+254 700 000 000">
+
+            <br><br>
+
+            <label for="subject">Subject</label><br>
             <select id="subject" name="subject">
-                <option> Genearal inquiry</option>
-                <option>Project folder</option>
+                <option>General Inquiry</option>
+                <option>Project Proposal</option>
                 <option>Feedback</option>
-
             </select>
+
             <br><br>
 
-            <label for="message">Message:</label><br>
+            <label for="message">Message</label><br>
 
-<textarea 
-id="message"
-name="message"
-placeholder="Write your message here..."
-minlength="50"
-required></textarea>
-<br><br>
-<input
-type="checkbox"
-id="newsletter"
-name="newsletter">
- <label for="newsletter">
+            <textarea
+                id="message"
+                name="message"
+                placeholder="Write your message here..."
+                minlength="50"
+                required></textarea>
+
+            <br><br>
+
+            <input
+                type="checkbox"
+                id="newsletter"
+                name="newsletter">
+
+            <label for="newsletter">
                 Subscribe to my newsletter
             </label>
 
             <br><br>
 
-            <button type="submit">
-                Submit
-            </button>
+            <button type="submit">Submit</button>
 
-
-
-    </fieldset>
+        </fieldset>
     </form>
+
+</section>
+
+<section>
+
+    <h2>Contact Information</h2>
+
+    <p>
+        Email:
+        <a href="mailto:collins@example.com">collins@example.com</a>
+    </p>
+
+    <p>
+        Phone:
+        <a href="tel:+254700000000">+254700000000</a>
+    </p>
+
+    <p>Location: Nairobi, Kenya</p>
+
+    <p>Time Zone: East Africa Time (UTC+3)</p>
+
+    <h2>Follow Me</h2>
+
+    <p>
+        <a href="https://github.com/kole16" target="_blank">GitHub</a>
+    </p>
+
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Collins</p>
+</footer>
+
 </body>
 </html>
